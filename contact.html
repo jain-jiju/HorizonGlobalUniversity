@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="University Logo">
+            <h1>Horizon Global University</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="login-btn" onclick="openLogin()">Login</button>
+
+    </nav>
+</header>
+
+<section class="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-container">
+
+        <!-- Left Info -->
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p><strong>Address:</strong> Kochi, Kerala, India</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Email:</strong> info@horizonglobaluniversity.com</p>
+
+            <!-- Social Icons -->
+            <div class="contact-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="contact-form">
+            <form id="contactForm">
+
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+
+    <div class="modal-content">
+        <span class="close" onclick="closeLogin()">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p id="loginMsg"></p>
+    </div>
+
+</div>
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <!-- Logo + Name -->
+        <div class="footer-left">
+            <img src="logo.png" alt="Logo">
+            <h2>Horizon Global University</h2>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-right">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Horizon Global University | All Rights Reserved</p>
+    </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

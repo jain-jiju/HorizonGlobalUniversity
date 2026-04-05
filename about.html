@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="University Logo">
+            <h1>Horizon Global University</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="login-btn" onclick="openLogin()">Login</button>
+
+    </nav>
+</header>
+
+<section class="about">
+    <div class="about-container">
+
+        <h2>About Horizon Global University</h2>
+
+        <p>
+            Horizon Global University is a forward-thinking institution dedicated to academic excellence,
+            innovation, and global impact. Established with a vision to nurture future leaders, the
+            university provides a dynamic learning environment that blends theoretical knowledge with
+            real-world application.
+        </p>
+
+        <p>
+            With a strong focus on technology, research, and interdisciplinary learning, Horizon Global
+            University offers a wide range of programs in engineering, data science, business, and
+            emerging fields. Our curriculum is designed to equip students with the skills and mindset
+            needed to thrive in a rapidly evolving world.
+        </p>
+
+        <p>
+            The university is committed to fostering creativity, critical thinking, and ethical
+            leadership. Supported by experienced faculty and state-of-the-art infrastructure,
+            students are encouraged to explore, innovate, and make meaningful contributions to society.
+        </p>
+
+        <p>
+            At Horizon Global University, we believe in shaping not just careers, but responsible global
+            citizens ready to make a difference.
+        </p>
+
+    </div>
+</section>
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+
+    <div class="modal-content">
+        <span class="close" onclick="closeLogin()">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p id="loginMsg"></p>
+    </div>
+
+</div>
+
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <!-- Logo + Name -->
+        <div class="footer-left">
+            <img src="logo.png" alt="Logo">
+            <h2>Horizon Global University</h2>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-right">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Horizon Global University | All Rights Reserved</p>
+    </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

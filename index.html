@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Horizon Global University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="University Logo">
+            <h1>Horizon Global University</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="login-btn" onclick="openLogin()">Login</button>
+
+    </nav>
+</header>
+<section class="hero">
+
+    <!-- Slides -->
+    <div class="slide1 active" style="background-image: url('image1.png');"></div>
+    <div class="slide1" style="background-image: url('image2.png');"></div>
+    <div class="slide1" style="background-image: url('image3.png');"></div>
+    <div class="slide1" style="background-image: url('im‫age4.png');"></div>
+    <div class="slide1" style="background-image: url('image5.png');"></div>
+    <div class="slide1" style="background-image: url('image6.png');"></div>
+
+    <!-- Overlay Text -->
+    <div class="overlay">
+        <h1>Welcome to Horizon Global University</h1>
+        <p>Shape your future</p>
+    </div>
+
+    <!-- Arrows -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+</section>
+<!-- Announcement Section -->
+<section class="announcements">
+
+    <h2>Latest Announcements</h2>
+
+    <div class="announcement-container">
+
+        <div class="announcement-card">
+            <h3>Admissions Open 2026</h3>
+            <p>Applications are now open for all undergraduate programs.</p>
+        </div>
+
+        <div class="announcement-card">
+            <h3>AI Workshop</h3>
+            <p>Join our AI & Data Science workshop on April 20.</p>
+        </div>
+
+        <div class="announcement-card">
+            <h3>Exam Schedule Released</h3>
+            <p>Check the portal for updated semester exam timetable.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="slider">
+    <div class="slide-track">
+        <!-- Images -->
+        <img src="image1.png">
+        <img src="image2.png">
+        <img src="image3.png">
+        <img src="im‫age4.png">
+        <img src="image5.png">
+        <img src="image6.png">
+        <img src="image7.png">
+        <img src="image8.png">
+        <img src="image9.png">
+        
+
+        <!-- Duplicate images for smooth loop -->
+        <img src="image1.png">
+        <img src="image2.png">
+        <img src="image3.png">
+        <img src="im‫age4.png">
+        <img src="image5.png">
+        <img src="image6.png">
+        <img src="image7.png">
+        <img src="image8.png">
+        <img src="image9.png">
+    </div>
+</section>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+
+    <div class="modal-content">
+        <span class="close" onclick="closeLogin()">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p id="loginMsg"></p>
+    </div>
+
+</div>
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <!-- Logo + Name -->
+        <div class="footer-left">
+            <img src="logo.png" alt="Logo">
+            <h2>Horizon Global University</h2>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-right">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Horizon Global University | All Rights Reserved</p>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
